@@ -1,0 +1,61 @@
+.navbar-header{
+    font-family: "Eczar", serif;
+    font-optical-sizing: auto;
+   
+}
+.header{
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    height: 50px;
+    width: 80px;
+    text-decoration: none;
+}
+
+.nav a{
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.nav a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: .3s;
+}
+.nav a:hover{
+    color: rgb(242, 97, 6) ;
+}
+.nav a:hover::before{
+    width: 100%;
+    background-color: rgb(242, 97, 6) ;
+}
+
+@media screen and (max-width: 768px) {
+    .nav{
+       display: block;
+       text-align: center;
+      
+    }
+    .navbar-collapse{
+        height: 150px;
+        
+    }
+
+}
