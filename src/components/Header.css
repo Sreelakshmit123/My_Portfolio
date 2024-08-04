@@ -1,27 +1,29 @@
-.navbar-header{
+.navbar-header {
     font-family: "Eczar", serif;
     font-optical-sizing: auto;
-   
+
 }
-.header{
-    
+
+.header {
+
     top: 0;
     left: 0;
     width: 100%;
-    padding:20px 10px;
+    padding: 20px 10px;
     background-color: transparent;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     z-index: 100;
 }
-.logo{
+
+.logo {
     height: 50px;
     width: 80px;
     text-decoration: none;
 }
 
-.nav a{
+.nav a {
     position: relative;
     font-size: 18px;
     color: white;
@@ -29,7 +31,8 @@
     margin-left: 40px;
     text-decoration: none;
 }
-.nav a::before{
+
+.nav a::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -39,23 +42,41 @@
     background-color: rgb(255, 255, 255);
     transition: .3s;
 }
-.nav a:hover{
-    color: rgb(242, 97, 6) ;
+
+.nav a:hover {
+    color: rgb(242, 97, 6);
 }
-.nav a:hover::before{
+
+.nav a:hover::before {
     width: 100%;
-    background-color: rgb(242, 97, 6) ;
+    background-color: rgb(242, 97, 6);
 }
 
 @media screen and (max-width: 768px) {
-    .nav{
-       display: block;
-       text-align: center;
-      
+.navbar-header{
+    padding: 0%;
+    background-image: linear-gradient(to bottom right, rgb(4, 4, 4), rgb(8, 7, 6), rgb(255, 255, 255));
+    /* background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px); */
+padding-bottom: 10px;
+}
+    .nav {
+        display: block;
+        text-align: center;
     }
-    .navbar-collapse{
-        height: 150px;
+
+    .nav a {
+        margin-left: 0%;
         
     }
 
+    .navbar-collapse {
+        height: 150px;
+
+    }
+
+    .nav .fa-brands {
+        padding: 12px ;
+    }
+    
 }

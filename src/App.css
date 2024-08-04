@@ -2,22 +2,34 @@
     font-family: "Eczar", serif;
     font-optical-sizing: auto;
 }
+
+/* navbar css */
+.ContainerHome {
+    padding: 90px;
+}
+
+/* abou section css */
+
+
 .aboutmeheading:hover {
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px rgb(3, 3, 3), 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(150, 39, 39)
 }
 
 .aboutcol {
-    margin-top:120px;
+    margin-top: 120px;
 }
 
 .dwld {
     background-color: rgb(242, 97, 6);
     color: white;
 }
-.dwld:hover{
+
+.dwld:hover {
     border: 1px solid;
 }
+
+/* skills section css */
 
 .skills {
     display: flex;
@@ -26,26 +38,32 @@
     justify-content: center;
     width: 100vw;
     max-width: 65rem;
-   
+
 }
-.sections{
+
+.sections {
     object-fit: cover;
     height: 13rem;
     margin: 0.2rem;
 
 }
 
+.sections:hover {
+    background-color: transparent;
+
+}
 
 .name {
     font-size: 45px;
 }
 
+/* icons hover effect and styling  eg: linkedin, arrow, message  */
+
 .icon {
     width: 42px;
     height: 41px;
- border: 2px solid;
- border-radius: 3px;
-    /* background-color: aqua; */
+    border: 2px solid;
+    border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,6 +103,8 @@
     }
 }
 
+/* scollbar */
+
 html {
     scroll-behavior: smooth;
 }
@@ -106,87 +126,84 @@ html {
     background: rgb(242, 97, 6);
 }
 
-
-
+/* projects images */
 
 .containerr {
     position: relative;
-
 }
 
-.ni-img {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
+.overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
 
 }
 
-.containerr:hover .image {
-    opacity: 0.3;
+.containerr:hover .overlay {
+    bottom: 0;
+    height: 100%;
 }
 
-.containerr:hover .middle {
-    opacity: 1;
-}
-
-.text p {
-    font-size: 25px;
-}
-
-.text1 p {
-    font-size: 25px;
+.projectimage {
+    width: 100%;
+    height: auto;
 }
 
 .text {
-    opacity: .7;
-    height: 330px;
-    width: 416px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    padding: 120px 32px;
-    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: start;
+}
 
+.textt {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: start;
 }
 
 .text1 {
-    opacity: .7;
-    height: 330px;
-    width: 416px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    padding: 120px 32px;
-    cursor: pointer;
-
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 65%;
+    left: 23%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: start;
 }
 
-.sections:hover {
-    background-color: transparent;
 
-}
-.contact{
+/* end */
+
+
+
+/* contact section css */
+.contact {
     display: flex;
     justify-content: space-around;
-    
+
 }
 
-.movingelemrnt {
-    overflow-x: hidden !important;
-}
-
-.contactinput{
+.contactinput {
     width: 50%;
     height: 50%;
     display: flex;
@@ -196,7 +213,10 @@ html {
     width: 90w;
     max-width: 60rem;
 }
-.namee, .email, .msg{
+
+.namee,
+.email,
+.msg {
     font-size: medium;
     width: 100%;
     max-width: 40rem;
@@ -207,21 +227,28 @@ html {
     border-radius: 0.5rem;
     color: black;
 }
-.msg{
+
+.msg {
     height: 25vh;
 }
 
-.ContainerHome{
-    padding: 90px;
-}
+/*readmore in about me section css*/
+
 .vl {
     border-left: 6px solid rgb(0, 0, 0);
     height: 280px;
-  }
+}
+
 .vl1 {
     border-left: 6px solid rgb(0, 0, 0);
     height: 230px;
-  }
+}
+
+.modalrow {
+    color: rgb(242, 97, 6);
+}
+
+/* media quries section */
 
 @media screen and (max-width: 768px) {
 
@@ -229,7 +256,7 @@ html {
         margin-top: 0px;
     }
 
- 
+
 
     .sections {
         margin-bottom: 25px;
@@ -263,69 +290,55 @@ html {
         background-color: transparent;
 
     }
-
-    .containerr {
-        position: relative;
-
+    .overlay .text {
+        font-size: 10px;
     }
 
-    .ni-img {
-        opacity: 1;
-        display: block;
-        transition: .5s ease;
-        backface-visibility: hidden;
-    }
 
-    .middle {
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-
-    }
-
-    .containerr:hover .image {
-        opacity: 0.3;
-    }
-
-    .containerr:hover .middle {
-        opacity: 1;
-    }
-
-    .text {
-        height: 0px;
-        width: 366px;
-        padding: 147px 32px;
+    .textt {
+        font-size: 20px;
     }
 
     .text1 {
-        height: 136px;
-        width: 171px;
-        padding: 10px;
+        font-size: 5px;
+        margin-left: 35px;
     }
-    .text1 p {
-        font-size: 15px;
-    }
-    .contact{
+
+    .contact {
         display: block;
         align-items: center;
     }
-    .copyright{
+
+    .copyright {
         text-align: center;
     }
-    .marquee.movingelemrnt {
-        overflow-x: hidden !important;
-    }
-    .contactinput{
+
+    .contactinput {
         width: 80%;
     }
-    .ContainerHome{
+
+    .ContainerHome {
         padding: 30px;
     }
-    .ContainerHome1{
+
+    .ContainerHome1 {
         padding: 30px;
     }
+
+    .vl {
+        border-left: 6px solid rgb(0, 0, 0);
+        height: 370px;
+    }
+
+    .vl1 {
+        border-left: 6px solid rgb(0, 0, 0);
+        height: 230px;
+    }
+
+    .modlrow {
+        color: rgb(242, 97, 6);
+        font-weight: bolder;
+    }
+
+
 }

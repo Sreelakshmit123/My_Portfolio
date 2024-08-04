@@ -145,7 +145,7 @@ function Home() {
             </div>
             <div data-aos="fade-up"
               data-aos-anchor-placement="center-bottom" data-aos-duration="1000" className="aboutcol col-lg-6 ">
-              <h5 className='d-flex'>MY NAME IS SREELAKSHMI T <span className='text-warning text-uppercase ps-2'><Typewriter
+              <h5 className='d-flex'>MY NAME IS SREELAKSHMI T <span className='typewritingcss text-warning text-uppercase ps-2'><Typewriter
                 options={{
                   strings: ["I'M A FRONTEND DEVELOPER", "I'M A Full Stack Developer", "I'M A React Developer", "I'M A Angular Developer"],
                   autoStart: true,
@@ -161,7 +161,7 @@ function Home() {
 
              
               </p>
-              <a onClick={handleShow} style={{}} className='dwld btn  text-light fw-bolder' >Read More <i class="fa-solid fa-arrow-right ms-1"></i> </a>
+              <a onClick={handleShow}  className='dwld btn  text-light fw-bolder' >Read More <i class="fa-solid fa-arrow-right ms-1"></i> </a>
 
               <Modal
                 scrollable={true}
@@ -181,7 +181,7 @@ function Home() {
                   overflowY: 'auto'
                 }}>
                   <div className='row '>
-                    <div className="col-lg-3 fw-bolder ">
+                    <div className="col-lg-3 modlrow fw-bolder ">
                       EDUCATION
                     </div>
                     <div className="col-lg-9  ">
@@ -204,8 +204,8 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className='row'>
-                    <div className="col-lg-3 fw-bolder ">
+                  <div className='row '>
+                    <div className="col-lg-3 modlrow fw-bolder ">
                       CERTIFICATION COURSE
                     </div>
                     <div className="col-lg-9  ">
