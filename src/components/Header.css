@@ -55,9 +55,8 @@
 @media screen and (max-width: 768px) {
 .navbar-header{
     padding: 0%;
-    background: rgba(0, 0, 0, .1);
-    backdrop-filter: blur(50px);
-padding-bottom: 10px;
+    background-image: linear-gradient(to bottom right, rgb(6, 6, 6), rgb(7, 7, 7), rgb(0, 0, 0));
+padding-bottom: 5px;
 }
     .nav {
         display: block;
